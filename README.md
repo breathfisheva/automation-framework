@@ -1,2 +1,3 @@
 # automation-framework
-从零开始搭建一个自动化测试框架
+teach you how to create a automation framework from beginning.
+python 3.7 

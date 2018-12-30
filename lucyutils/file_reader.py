@@ -20,7 +20,8 @@ class YamlReader:
                 self._data = list(yaml.safe_load_all(f))  # load后是个generator，用list组织成列表
         return self._data
 
-# 参数化，加入读取excel的功能
+
+# 为了参数化的目的加入的代码，用于读取excel的功能
 
 class SheetTypeError(Exception):
     pass

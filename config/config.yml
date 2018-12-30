@@ -1,4 +1,5 @@
 URL: http://www.baidu.com
+# 这个是log的配置信息的提取，对应教程的第五步：日志优化
 log:
     file_name: test.log
     backup: 5

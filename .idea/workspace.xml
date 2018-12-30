@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9ac9f6-399f-41ef-96dd-9f6f3bfa2270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interface/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/test_baidu_http.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lucyutils/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lucyutils/assertion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/test_baidu_http.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/test_baidu_http.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +43,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interface/test_baidu_http.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="152">
+              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lucyutils/assertion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -160,6 +170,11 @@
               <item name="automation-framework" type="462c0819:PsiDirectoryNode" />
               <item name="lucyutils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -172,8 +187,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\interface" />
       <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\lucyutils" />
+      <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\interface" />
       <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\test\page" />
       <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\test\common" />
       <recent name="C:\Users\Dexin\Documents\Lucy\code\automation-framework\test\case" />
@@ -306,6 +321,9 @@
     <history-entry file="Unittests_for_test_baidu_TestBaiDu - 2018.12.30 at 14h 08m 48s.xml">
       <configuration name="Unittests for test_baidu.TestBaiDu" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_baidu_http_TestBaiDuHTTP_test_baidu_http - 2018.12.30 at 18h 18m 51s.xml">
+      <configuration name="Unittests for test_baidu_http.TestBaiDuHTTP.test_baidu_http" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -316,7 +334,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,9 +420,6 @@
     <entry file="file://$PROJECT_DIR$/test/case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/case/test_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -463,10 +478,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lucyutils/assertion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8111#8117#1" expanded="true" />
+            <element signature="e#8176#8182#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface/test_baidu_http.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="152">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

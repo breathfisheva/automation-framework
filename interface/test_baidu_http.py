@@ -3,6 +3,7 @@ from lucyutils.config import Config, REPORT_PATH
 from lucyutils.client import HTTPClient
 from lucyutils.log import logger
 from lucyutils.htmltestrunner import HTMLTestRunner
+from lucyutils.assertion import assertHTTPCode
 
 
 class TestBaiDuHTTP(unittest.TestCase):
@@ -14,6 +15,7 @@ class TestBaiDuHTTP(unittest.TestCase):
     def test_baidu_http(self):
         res = self.client.send()
         logger.debug(res.text)
+        assertHTTPCode(res, [400])
         self.assertIn('百度一下，你就知道', res.text)
 
 

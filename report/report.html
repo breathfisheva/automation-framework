@@ -181,9 +181,9 @@
         
     <div class='page-header'>
         <h1>从0搭建测试框架 测试</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2018-12-30 18:19:24</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.156724</p>
-<p class='attribute'><strong>状态:</strong> 通过 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2018-12-30 18:31:27</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.140948</p>
+<p class='attribute'><strong>状态:</strong> 失败 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>接口html报告</p></div>
@@ -214,25 +214,39 @@
             <td>查看</td>
         </tr>
         
-    <tr class='passClass'>
+    <tr class='failClass'>
         <td>TestBaiDuHTTP</td>
         <td>1</td>
-        <td>1</td>
         <td>0</td>
+        <td>1</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
     </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_baidu_http</div></td>
-    <td colspan='5' align='center'>通过</td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_baidu_http</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        失败</a>
+    <div id='div_ft1.1' class="popup_window">
+        <pre>ft1.1: Traceback (most recent call last):
+  File "C:/Users/Dexin/Documents/Lucy/code/automation-framework/interface/test_baidu_http.py", line 18, in test_baidu_http
+    assertHTTPCode(res, [400])
+  File "C:\Users\Dexin\Documents\Lucy\code\automation-framework\lucyutils\assertion.py", line 11, in assertHTTPCode
+    raise AssertionError('响应code不在列表中！')  # 抛出AssertionError，unittest会自动判别为用例Failure，不是Error
+AssertionError: 响应code不在列表中！
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
 </tr>
 
         <tr id='total_row'>
             <td>总计</td>
             <td>1</td>
-            <td>1</td>
             <td>0</td>
+            <td>1</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -266,8 +280,8 @@
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:1, name:'通过'},
-                        {value:0, name:'失败'},
+                        {value:0, name:'通过'},
+                        {value:1, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {
